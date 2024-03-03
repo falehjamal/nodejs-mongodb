@@ -9,6 +9,7 @@ import {
  
 const router = express.Router();
  
+router.get('/', (req,res)=>res.send("ok"));
 router.get('/users', getUsers);
 router.get('/users/:id', getUserById);
 router.post('/users', saveUser);
